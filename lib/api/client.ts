@@ -1,6 +1,4 @@
-import getConfig from "next/config";
-
-const { apiUrl } = getConfig();
+const apiUrl = process.env.URL;
 
 export const get = (endpoint: string) => request("GET", endpoint, null);
 
