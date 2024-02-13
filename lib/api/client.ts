@@ -1,4 +1,4 @@
-const ApiUrl = process.env.API_URL;
+const ApiUrl = process.env.URL;
 
 export const get = (endpoint: string) => request("GET", endpoint, null);
 
