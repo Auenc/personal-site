@@ -6,5 +6,5 @@ export const getAboutMe = async (): Promise<string> => {
   const res = await get("/about-me");
   const { data: aboutMeDto }: Strapi<AboutMeDto> = await res.json();
 
-  return aboutMeDto.attributes.content;
+  return aboutMeDto?.attributes?.content;
 };
