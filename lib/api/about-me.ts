@@ -6,5 +6,9 @@ export const getAboutMe = async (): Promise<string> => {
   const res = await get("/about-me");
   const { data: aboutMeDto }: Strapi<AboutMeDto> = await res.json();
 
-  return aboutMeDto?.attributes?.content;
+  if (!aboutMeDto) {
+    throw new Error("Failed to fetch about me");
+  }
+
+  return aboutMeDto.attributes.content;
 };
