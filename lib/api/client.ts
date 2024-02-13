@@ -1,4 +1,6 @@
-const ApiUrl = process.env.URL;
+import getConfig from "next/config";
+
+const { apiUrl } = getConfig();
 
 export const get = (endpoint: string) => request("GET", endpoint, null);
 
@@ -18,6 +20,6 @@ const request = async (
     opts.body = JSON.stringify(data);
   }
 
-  const res = await fetch(`${ApiUrl}${endpoint}`, opts);
+  const res = await fetch(`${apiUrl}${endpoint}`, opts);
   return res;
 };
