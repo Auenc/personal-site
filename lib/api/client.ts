@@ -12,6 +12,7 @@ const request = async (
       "Content-Type": "application/json",
     },
     method,
+    next: { revalidate: Number(process.env.CACHE_REVALIDATE) || 60 },
   };
 
   if (data) {

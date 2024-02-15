@@ -10,7 +10,7 @@ const BioSection = ({ title, content }: BioSectionProps) => {
   return (
     <section className="lg:p-4">
       <Heading text={title} />
-      <Markdown>{content}</Markdown>
+      {content}
     </section>
   );
 };
