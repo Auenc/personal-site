@@ -1,7 +1,7 @@
 "use client";
 import Socials from "./socials";
 
-const routes = ["about", "experience", "projects", "blog"];
+const routes = ["about", "experience"];
 
 const Nav = () => {
   return (
