@@ -11,12 +11,12 @@ const Nav = () => {
           Lewis Campbell
         </h1>
         <h3 className="text-base font-semibold my-2 text-gray-200">
-          Software developer
+          Senior Software developer
         </h3>
-        <p className="whitespace-normal text-sm">
+        {/* <p className="whitespace-normal text-sm">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos maxime
           quasi officiis nobis.
-        </p>
+        </p> */}
       </section>
       <section className="hidden lg:block lg:flex-1">
         <ul className="tree">
