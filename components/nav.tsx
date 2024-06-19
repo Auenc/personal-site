@@ -29,10 +29,8 @@ const Nav = () => {
       </section>
       <section className="lg:self-center">
         <Socials
-          twitter="https://twitter.com"
-          youtube="https://youtube.com"
           github="https://github.com"
-          linkedin="https://linkedin.com"
+          linkedin="https://www.linkedin.com/in/lewis-campbell-930b3649/"
           email="mailto:ljoncb@gmail.com"
         />
       </section>
