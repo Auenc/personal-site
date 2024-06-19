@@ -16,14 +16,14 @@ export default async function Home() {
         <article className="lg:h-full lg:overflow-y-scroll scroll-smooth scroll-m-0 no-scrollbar">
           <BioSection title="about" content={aboutMe} />
           <ExperienceList experiences={xps} />
-          <BioSection
+          {/* <BioSection
             title="projects"
             content={dummyContent + dummyContent + dummyContent}
           />
           <BioSection
             title="blog"
             content={dummyContent + dummyContent + dummyContent}
-          />
+          /> */}
         </article>
       </main>
     </>
